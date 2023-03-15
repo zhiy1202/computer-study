@@ -1,0 +1,24 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: bishe3
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/computer?serverTimezone=UTC&useSSL=false
+    username: root
+    password: 333
+  servlet:
+    multipart:
+      max-request-size: 500MB
+      max-file-size: 500MB
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+zzy:
+  local: http://localhost:8002/static/
+  filePath: D://static/
